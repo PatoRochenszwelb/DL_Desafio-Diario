@@ -1,0 +1,24 @@
+.header .header_nav {
+    justify-items: end;
+}
+.header .header__nav ul {
+    list-style: none;
+}
+
+.header .header__nav ul li {
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+}
+.header .header__nav ul li a {
+    text-decoration: none;
+}
+
+
+.header .header__nav ul li a.hide { 
+    display: none; 
+    @include respond-to('md') {
+        display: inline;
+    }
+}
+
